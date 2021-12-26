@@ -1,0 +1,8 @@
+CFLAGS = -Wall -O0 -g
+bin_PROGRAMS=rhasher
+
+rhasher_SOURCES=rhasher.c
+TESTS=md5.sh sha1.sh
+
+gitclean:
+	git clean -df
